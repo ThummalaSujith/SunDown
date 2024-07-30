@@ -115,6 +115,93 @@ animation-direction: alternate;
 
 }
 
+#page2{
+    width:100%;
+    min-height: 100vh;
+  
+    margin-top:3vw;
+
+
+}
+.moving__text{
+    white-space: nowrap;
+    overflow-x: auto;
+ 
+    
+}
+.moving__text::-webkit-scrollbar{
+    display: none;
+}
+
+.moving__text-content{
+    white-space: nowrap;
+    display:inline-block;
+    animation-name: ContentScroll;
+    animation-timing-function: linear;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+   
+
+}
+.moving__text-content h1{
+
+    display:inline-block;
+    font-size:8vw;
+    font-family: sans-serif;
+    white-space: nowrap;
+}
+
+#gola{
+    display: inline-block;
+    height:70px;
+    width:70px;
+    background-color: rgb(255, 77, 0);
+    border-radius: 50%;
+    margin:1vw 2vw;
+}
+
+/*
+.moving__text{
+    display: flex;
+    justify-content: space-between;
+gap:2vw;
+}
+
+.moving__text-content{
+    display: flex;
+    justify-content: space-evenly;
+    gap:2vw;
+    align-items: center;
+    animation-name: ContentScroll;
+    animation-timing-function: linear;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+
+
+.moving__text-content h1{
+    font-size: 8vw;
+    font-family: sans-serif;
+}
+
+#gola{
+height:3.5vw;
+width:3.5vw;
+background-color: orangered;
+border-radius: 50%;
+}
+*/
+
+@keyframes ContentScroll {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+} 
 @media (max-width:750px){
 
     .center{
@@ -139,4 +226,15 @@ align-items: flex-end;
     font-size: 4vw;
  }
     
+ #gola{
+    display: inline-block;
+    height:5vw;
+    width:5vw;
+    background-color: rgb(255, 77, 0);
+    border-radius: 50%;
+    margin:0.5vw 2vw;
+}
+
+
+
 }
