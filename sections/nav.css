@@ -69,3 +69,16 @@ overflow: hidden;
     position: relative;
 }
 
+@media (max-width:750px){
+    .nav__content{
+        display:none;
+    }
+    nav{
+        padding:3vw 2vw;
+   
+    }
+    nav img{
+        width:33vw;
+        padding:3vw 2vw;
+    }
+}
