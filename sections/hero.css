@@ -1,0 +1,116 @@
+
+.center{
+    display:flex;
+    justify-content: space-between;
+   padding-bottom:2vw;
+    height:65vh;
+    width:100%;
+    align-items: flex-end;
+    border-bottom: 1px solid black;
+}
+
+.left h3{
+width:23vw;
+font-size: 1.5vw;
+font-family: sans-serif;
+}
+
+.right h1{
+    font-size: 10vw;
+    width:40vw;
+    font-family: sans-serif;
+    line-height: 8vw;
+    text-align: right;
+}
+
+#page1 video {
+
+width:100%;
+border-radius: 2vw;
+margin-top:5vh;
+position: relative;
+z-index:9;
+
+}
+
+
+.background__circle{
+    width:30vw;
+    height:40vw;
+background-color: rgb(255, 60, 0);
+position: absolute;
+border-radius: 50%;
+top:0;
+right:0;
+filter:blur(20px);
+animation-name:anime;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+animation-direction: alternate;
+}
+
+.background__circle2{
+    width:30vw;
+    height:30vw;
+    background-color: rgb(255, 60, 0);
+    position: absolute;
+    border-radius: 50%;
+    top:0;
+    right:0;
+    filter:blur(20px);
+    animation-name: anime3;
+    animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction:alternate-reverse;
+  
+}
+.background__circle3{
+    width:30vw;
+    height:30vw;
+    background:linear-gradient(rgba(242, 93, 34, 0.955),rgb(255, 60, 0));
+    position: absolute;
+    border-radius: 50%;
+    top:0;
+    right:0;
+    filter:blur(20px);
+  animation-name: anime2;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  
+}
+
+@keyframes anime {
+    from{
+        transform:translate(10%,10%);
+    }
+    to{
+        transform:translate(-30%,-20%)
+    }
+}
+
+@keyframes anime2 {
+    from{
+        transform:translate(0%,0%)
+    }
+    to{
+        transform:translate(20%,-10%) ; 
+    }
+}
+@keyframes anime3 {
+    from{
+        transform:translate(0%,0%)
+    }
+    to{
+        transform:translate(10%,-20%)
+    }
+}
+
+.page1__video{
+    position: relative;
+    z-index:9;
+
+}
