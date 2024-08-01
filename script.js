@@ -67,6 +67,36 @@ return;
 
 
 
+// const Cursor=document.querySelector('.cursor');
+
+// Cursor.addEventListener('mousemove',(e)=>{
+//     console.log(e)
+//  Cursor.setAttribute('style',"top:"+e.pageY+"px; left:"+e.pageX+"px;")
+// })
+
+
+const page5 = document.querySelector('.page5__slide-container');
+const cursor = document.querySelector('.cursor');
+
+
+page5.addEventListener('mousemove', (e) => {
+    const rect = page5.getBoundingClientRect();
+    const x = e.pageX - rect.left - window.pageXOffset;
+    const y = e.pageY - rect.top - window.pageYOffset;
+
+    cursor.style.left = x + 'px';
+    cursor.style.top = y + 'px';
+});
+
+// Add mouseenter and mouseleave events to manage cursor visibility
+page5.addEventListener('mouseenter', () => {
+    cursor.style.display = 'block'; // Show the cursor when mouse enters #page5
+});
+
+page5.addEventListener('mouseleave', () => {
+    cursor.style.display = 'none'; // Hide the cursor when mouse leaves #page5
+});
+
 
 
 
