@@ -779,7 +779,7 @@ to{
     background-color: #efeae3;
     position: relative;
     z-index: 100;
-    min-width: 101vw;
+    min-width: 100vw;
     overflow-x: hidden;
 }
 #page1 {
@@ -983,6 +983,8 @@ button[type="submit"] img{
   margin-top: 15vw;
   overflow-y: hidden;
 }
+
+
 
 
 }
