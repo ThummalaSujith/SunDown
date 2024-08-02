@@ -977,4 +977,9 @@ button[type="submit"] {
 button[type="submit"] img{
   width:4vw;
 }
+
+.page5__slide-container {
+  margin-top: 15vw;
+  overflow-y: hidden;
+}
 }
